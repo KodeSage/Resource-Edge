@@ -1,0 +1,31 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+.homepage{
+    height: 500px;
+}
+.home-brand{
+    display: flex;
+}
+.home-text{
+    align-items: center;
+    width: 50%;
+    margin-top: 10%;
+}
+.home-image img {
+    width: 100%;
+}
+.home-text h1{
+    font-size: 3rem;
+    text-align:left;
+    padding-bottom: 20px;
+    color: var( --primary-blue);
+}
+.home-text p{
+    font-size: 1.2rem;
+    color: var(--primary-blue-light);
+
+}
