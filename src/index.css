@@ -1,13 +1,28 @@
-body {
+*{
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face{
+    src: url(./Components/Assets/Circular-Std-Medium-500.ttf);
+    font-family: Circular Std;
 }
+html{
+  scroll-behavior: smooth; 
+  font-family: 'Noto Sans JP', sans-serif;
+}
+body{
+   font-size: 14px;
+   line-height: 1.5;
+    background-color: #fff;
+    font-family: 'Circular Std', -apple-system;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/* .container {
+   max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+} */
