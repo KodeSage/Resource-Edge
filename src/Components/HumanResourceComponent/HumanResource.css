@@ -31,4 +31,6 @@
 .Employeeboard img{
     width: 100%;
     cursor: pointer;
+     -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+    filter: drop-shadow(2px 12px 25px rgba(0,0,0,0.5));
 }

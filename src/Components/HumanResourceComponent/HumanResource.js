@@ -17,17 +17,17 @@ const HumanResource = () => {
           </div>
           <div className="humanresource-card">
             <div className="card">
-              <img src={Frame1} />
+              <img src={Frame1} alt='frame1' />
             </div>
             <div className="card">
-              <img src={Frame2} />
+              <img src={Frame2}  alt='frame2'/>
             </div>
             <div className="card">
-              <img src={Frame3} />
+              <img src={Frame3} alt='frame3'/>
             </div>
             </div>
          <div className='Employeeboard'>
-            <img src={ LastFrame} />
+            <img src={LastFrame} alt='last-frame'/>
         </div>
         </div>
       </div>
