@@ -45,9 +45,10 @@ const DualSection = () => {
           </div>
           <div className="Payroll-Dashboard-Image">
             <img src={PayrollDashboard} alt="Payroll-Dashboard" />
-          </div>
+                </div>
         </div>
-      </div>
+        </div>
+        
     );
 }
 export default DualSection;
