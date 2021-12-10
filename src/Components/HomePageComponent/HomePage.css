@@ -5,7 +5,7 @@
     padding: 0 40px;
 }
 .homepage{
-    height: 500px;
+    height: 600px;
 }
 .home-brand{
     display: flex;
@@ -26,6 +26,6 @@
 }
 .home-text p{
     font-size: 1.2rem;
-    color: var(--primary-blue-light);
+    color: #344563;
 
 }

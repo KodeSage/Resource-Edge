@@ -1,0 +1,34 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+.human-resource{
+    background-color: var(--grey-background);
+}
+.humanresource-text{
+    margin-top: 70px;
+    width: 50%;
+    margin-bottom: 60px;
+}
+.humanresource-text h2{
+    font-size: 3rem;
+    color: var( --primary-blue);
+}
+.humanresource-text p{
+    font-size: 1.2rem;
+    color: #344563;
+    padding-bottom: 20px;
+}
+.humanresource-card{
+    display: flex;
+    margin-top: 40px;
+}
+.card img{
+    cursor: pointer;
+}
+.Employeeboard img{
+    width: 100%;
+    cursor: pointer;
+}
