@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* border: 2px solid red; */
 }
 @font-face{
     src: url(./Components/Assets/Circular-Std-Medium-500.ttf);

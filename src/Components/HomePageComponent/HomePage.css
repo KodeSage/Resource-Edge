@@ -27,5 +27,30 @@
 .home-text p{
     font-size: 1.2rem;
     color: #344563;
-
+}
+@media screen and (max-width:768px){
+    .home-brand{
+        flex-direction: column;
+    }
+    .home-text{
+    width: 100%;
+}
+.home-text h1{
+    font-size: 2rem;
+    padding-bottom: 20px;
+    color: var( --primary-blue);
+}
+.homepage{
+    height: 800px;
+}
+}
+@media screen and (max-width:720px){
+    .homepage{
+    height: 750px;
+}
+}
+@media screen and (max-width:550px){
+    .homepage{
+    height: 600px;
+}
 }
