@@ -4,7 +4,6 @@ import './NavBar.css';
 
 const NavBar = () => {
     const link = '#';
-    const burger = document.querySelector(".burger") && document.querySelector(".burger");
     return (
       <nav className="navbar">
         <div className="navbar-brand container">

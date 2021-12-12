@@ -90,46 +90,9 @@
        content: url(../Assets/mobilelogo.svg);
         background-repeat: no-repeat;
     }
-    .navbar-left-a
-     {
-       position: absolute;
-       right: 0vh;
-       height: 40vh;
-       top:10vh;
-        width: 100%;
-       display: flex;
-       flex-direction: column;
-       width: 100%;
-       background-color: brown;
-    }
-    .burger{
+     .burger{
         display: block;
     }
-    .navbar-right{
-        position: absolute;
-        right: 0vh;
-        top:30vh;
-        width: 100%;
-        align-content: center;
-        flex-direction: column-reverse;
-    }
- .navbar-left-a,
- .navbar-right
- {
-     transform: translateX(100%);
-     transition: transform 0.5s ease-in;
- }
-   .navbar-left a{
-       margin: 20px 20px 5px 21px;
-   } 
-   .sign-up-btn, .sign-in-btn{
-    padding: 1rem;
-    margin: 5px 0;
-   }
-.sign-up-btn:hover{
-    background-color: var(--primary-blue);
-}
-
 }
 
 .nav-active{
