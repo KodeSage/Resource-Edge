@@ -5,11 +5,12 @@ import payroll from '../Assets/payroll.svg';
 import PayrollDashboard from '../Assets/Payroll-Dashboard.svg';
 import adminDashboard from '../Assets/admin-Dashboard.svg';
 import './DualSection.css'
+import Container from '../CommonStyles/Container';
 
 const DualSection = () => {
     return (
       <div className="dual-section">
-        <div className="container">
+        <Container>
           <div className="admin-logistics">
             <div className="admin-text">
               <h2>Admin & Logistics</h2>
@@ -46,7 +47,7 @@ const DualSection = () => {
           <div className="Payroll-Dashboard-Image">
             <img src={PayrollDashboard} alt="Payroll-Dashboard" />
                 </div>
-        </div>
+        </Container>
         </div>
         
     );
