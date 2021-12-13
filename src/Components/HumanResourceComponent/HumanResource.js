@@ -1,13 +1,14 @@
 import Frame1 from '../Assets/Frame1.png';
 import Frame2 from '../Assets/Frame2.png';
 import Frame3 from '../Assets/Frame3.png';
+import Container from '../CommonStyles/Container';
 import LastFrame from '../Assets/LastBigFrame.png';
 import './HumanResource.css';
 
 const HumanResource = () => {
     return (
       <div className="human-resource">
-        <div className="container">
+        <Container>
           <div className="humanresource-text">
             <h2>Human Resources</h2>
             <p>
@@ -29,7 +30,7 @@ const HumanResource = () => {
          <div className='Employeeboard'>
             <img src={LastFrame} alt='last-frame'/>
         </div>
-        </div>
+        </Container>
       </div>
     );
 }

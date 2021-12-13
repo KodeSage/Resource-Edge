@@ -4,10 +4,11 @@ import twitter from "../Assets/twitter.svg";
 import linkedin from '../Assets/linkedin.svg';
 import instagram from '../Assets/instagram.svg';
 import './Footer.css';
+import Container from '../CommonStyles/Container';
 const Footer = () => { 
     return (
       <footer className="footer">
-        <div className="container">
+        <Container>
           <div className="footer-contents">
             <div className="footer-logo">
               <img src={footerlogo} alt="footer-logo" />
@@ -32,7 +33,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </footer>
     );
 }
