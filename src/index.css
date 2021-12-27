@@ -2,7 +2,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 2px solid red; */
 }
 @font-face{
     src: url(./Components/Assets/Circular-Std-Medium-500.ttf);
@@ -20,10 +19,5 @@ body{
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
-/* .container {
-   max-width: 1200px;
-    margin: 0 auto;
-    overflow: auto;
-    padding: 0 40px;
-} */
