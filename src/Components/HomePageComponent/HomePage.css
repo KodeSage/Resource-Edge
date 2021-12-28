@@ -41,11 +41,11 @@
 }
 @media screen and (max-width:720px){
     .homepage{
-    height: 750px;
+    height: 850px;
 }
 }
 @media screen and (max-width:550px){
     .homepage{
-    height: 600px;
+    height: 800px;
 }
 }

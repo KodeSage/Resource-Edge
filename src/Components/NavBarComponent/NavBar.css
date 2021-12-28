@@ -1,125 +1,141 @@
 
-header{
- padding: 1rem 0;
- background-color: transparent;
- position: relative;
- z-index: 2;
-} 
-div{
-    display: block;
-}
-
- .navbar-brand {
-    display: flex;
- }
-
-.navbar-middle {
-
-}
-
-.navbar-logo img{
-    height: 30px; 
-    align-items: center;
-    margin-right: 30px;
-}
-.navbar-right{
-    position: fixed;
-    z-index: 15;
-    top: 0.9rem;
-    right: 2rem;
-}
-.navbar ul{
+.header{
   display: flex;
 }
-
-.navbar li{
-    list-style: none;
-
-}
+li{
+  list-style-type: none; 
+} 
 a{
-    text-decoration: none;
+text-decoration: none;
 }
-.navbar a{
-    color: var(--primary-blue);
-    cursor: pointer;
-    text-decoration: none;
-    padding: 0 30px;
-    font-size: 1.3rem;
+.navLogo img{
+  min-height: 8vh;
+  padding-top: 1.5rem;
+  height: 70%; 
+}
+.mobile-menu{
+  display: none;
+}
+.navLinks{
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+.links a{
+  letter-spacing: 3px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--primary-blue);
+  margin: 0 20px;
+}
+.links{
+  margin-right: 400px;
+}
+.buttons{
+  display: flex;
+  align-items: center;
+ overflow:hidden;
 }
 
-.sign-up-btn, .sign-in-btn{
-    padding: .5rem 1.2rem;
-    border-radius: 12px;
-    font-size: 1.4rem;
+.sign-up, .sign-in{
+   padding: 5px 30px;
+    font-size: 1.3rem;
     font-weight: 500;
     cursor: pointer;
-    /* height: 40px; */
-} 
-.sign-up-btn{
+    border-radius: 8px;
+    border: none;
+}
+.sign-up{
     background: transparent;
-    color: var(--primary-grey);
+   color: var(--primary-grey);
+   outline: none;
 }
-.sign-in-btn{
-   background: var(--secondary-blue);
+
+.sign-in {
+  background: var(--secondary-blue);
    color: var(--primary-white);
-   border-radius: 4px;
 }
- .sign-in-btn:hover{
-    background-color: var(--primary-blue);
-} 
-.burger{
-    display: none;
-} 
-
-.navbar-left a{
-    color: var(--primary-blue);
-    cursor: pointer;
-    text-decoration: none;
-    padding: 0 30px;
-    font-size: 1.3rem;
-}
-
-.burger .line1{
-    width: 30px;
-    height: 3px;
-    margin: 5px;
-    background-color: black;
-}
-.burger .line2{
-    width: 25px;
-    height: 3px;
-    margin-left: 10px;
-    background-color: black;
-}
-.burger .line3{
-    width: 20px;
-    height: 3px;
-    margin: 5px 15px;
-    background-color: black;
-}
-
-@media screen and (max-width:1150px){
-  
-    .navbar-logo img {
+@media (max-width: 960px) {
+    .navLogo img {
        content: url(../Assets/mobilelogo.svg);
-        background-repeat: no-repeat;
+        background-repeat: no-repeat;  
+        width: 3rem;
+        height: 3.5rem;   
     }
-     .burger{
-        display: block;
+    .header{
+      justify-content: space-between;
     }
+  .sign-up, .sign-in{
+    padding: 5px 350px;
+    margin-bottom:5px;
 }
-
-@media screen and (max-width:1100px){
-  
-    .navbar-logo img {
-       content: url(../Assets/mobilelogo.svg);
-        background-repeat: no-repeat;
-    }
-     .burger{
-        display: block;
-    }
+.menu-icon {
+    width: 60px;
+    height: 40px;
+  }
+  .navLinks{
+      position: absolute;
+      height: 50vh;
+      top: 20vh;
+      flex-direction: column;
+      width: 100%;
+      left: -100%;
+      opacity: 0;
+      transition: all 0.5s ease-in;
+      align-items: flex-start; 
+      padding: 0px 50px;
+      overflow-x: hidden;
 }
+ .links{
+display: flex;
+flex-direction: column;
+margin-right: 0px;
+margin: 22px 0;
+ }
+  .links a {
+margin: 12px 0;
+text-align: left;
+ }
+.navLinks.active{
+  background: white;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease-out;
+    z-index: 2;
+     -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+    filter: drop-shadow(2px 12px 25px rgba(0,0,0,0.5));
+}
+.mobile-menu{
+  display: flex;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+.buttons{
+   flex-direction: column-reverse;
+}
+  .sign-up {
+ background: #F4F5F7;
+mix-blend-mode: normal;
 
-.nav-active{
-    transform: translateX(0);
+  }
+}
+@media (max-width: 730px){
+    .sign-up, .sign-in{
+    padding: 5px 250px;
+}
+}
+@media (max-width: 630px){
+    .sign-up, .sign-in{
+    padding: 5px 200px;
+}
+}
+@media (max-width: 530px){
+    .sign-up, .sign-in{
+    padding: 5px 150px;
+}
+}
+@media (max-width: 430px){
+    .sign-up, .sign-in{
+    padding: 5px 120px;
+}
 }

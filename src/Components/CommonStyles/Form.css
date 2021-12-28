@@ -1,0 +1,16 @@
+.form{
+    border: none;
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 35vw;
+    background: var(--primary-white);
+    box-shadow: 0px 8px 12px rgba(9, 30, 66, 0.15), 0px 0px 1px rgba(9, 30, 66, 0.31);
+    padding: 3rem;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 968px){
+    .form{
+        width: 80vw;
+    }
+}

@@ -1,68 +1,43 @@
-
-import logo from '../Assets/desktoplogo.svg';
-import './NavBar.css';
-import Container from '../CommonStyles/Container';
-
+import React, { useState } from "react";
+import logo from "../Assets/desktoplogo.svg";
+import "./NavBar.css";
+import Container from "../CommonStyles/Container";
+import {ReactComponent as BurgerMenu } from '../Assets/menu.svg'
+import { ReactComponent as CloseMenu } from "../Assets/x.svg";
+import { NavLink } from "react-router-dom";
 const NavBar = () => {
-  const link = '#';
+   const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
   
+  const link = "#";
+
   return (
-    <header className="site-header">
-      <Container className="navbar-brand">
-        <div className="navbar-logo">
-          <img src={logo} alt="logo" />
+    <Container className="header">
+      <div className="navLogo">
+        <img src={logo} alt="navlogo" />
+      </div>
+      <nav className={click ? "navLinks active" : "navLinks"}>
+        <div className="links">
+          <a href={link}>Features</a>
+          <a href={link}>About</a>
         </div>
-        <div className="navbar-middle">
-          <div className="navbar">
-            <ul>
-              <li>
-                <a href={link}>Features</a>
-              </li>
-              <li>
-                <a href={link}>About</a>
-              </li>
-            </ul>
-          </div>
-          <div className="navbar-right">
-            <a href={link}>
-              <span className="sign-up-btn">Sign up</span>
-            </a>
-            <a href={link}>
-              <span className="sign-in-btn">Sign in</span>
-            </a>
-          </div>
-          <div className="burger">
-            <div className="line1"></div>
-            <div className="line2"></div>
-            <div className="line3"></div>
-          </div>
+        <div className="buttons">
+          <button className="sign-up">SignUp</button>
+          <NavLink to="/sign-in">
+            <button className="sign-in">SignIn</button>
+          </NavLink>
         </div>
-      </Container>
-    </header>
-    // <nav className="navbar">
-    //   <div className="navbar-brand container">
-    //     <div className="navbar-left">
-    //       <div className="navbar-logo">
-    //         <img src={logo} alt="logo" />
-    //       </div>
-    //       <div className="navbar-left-a">
-    //         <a href={link}>Features</a>
-    //         <a href={link}>About</a>
-    //       </div>
-    //     </div>
-    //     <div className="navbar-right">
-    //       <button className="sign-up-btn">Sign up</button>
-    //       <button className="sign-in-btn">Sign in</button>
-    //     </div>
-    //     <div className="burger">
-    //       <div className="line1"></div>
-    //       <div className="line2"></div>
-    //       <div className="line3"></div>
-    //     </div>
-    //   </div>
-    // </nav>
+      </nav>
+      <div className="mobile-menu" onClick={handleClick}>
+        {click ? (
+          <CloseMenu className="menu-icon" />
+        ) : (
+          <BurgerMenu className="menu-icon" />
+        )}
+      </div>
+    </Container>
   );
-  
-}
- 
+};
+
+
 export default NavBar;
