@@ -1,0 +1,19 @@
+.edge-bg{
+      height: 100vh;
+    background: var(--secondary-white);
+    background-image: url('../Assets/left-illustration.svg'), url('../Assets/right-illustration.svg');
+     background-position: bottom left, bottom right;
+    background-repeat: no-repeat;
+    padding-top: 4.5rem;
+}
+ .edge-logo {
+    width: auto;
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+@media(max-width:968px){
+   .edge-bg{
+       background-image: none;
+   } 
+}
