@@ -1,5 +1,6 @@
 import './404Page.css';
 import { NavLink } from "react-router-dom";
+import { FaArrowAltCircleLeft } from "react-icons/fa";
 import notfoundlogo from '../Assets/moon.png';
 const NotFoundPage = () => {
     
@@ -17,7 +18,7 @@ const NotFoundPage = () => {
           <h3>Whoops....... Page Not Found !!!</h3>
           <NavLink to="/" exact>
             <button>
-              <i class="fas fa-arrow-left"></i>
+              <FaArrowAltCircleLeft className='arrow' />
               Back to HomePage
             </button>
           </NavLink>

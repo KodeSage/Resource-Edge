@@ -27,13 +27,17 @@ animation: App-logo-spin infinite 2s linear;
 }
 button{
       padding: 10px 30px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
     cursor: pointer;
     border-radius: 50px;
     border: none;
      background: var(--secondary-blue);
+
     color: var(--primary-white);
+}
+.arrow{
+    margin: -3px 5px;
 }
 @keyframes App-logo-spin {
   from {

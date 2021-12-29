@@ -4,17 +4,19 @@ import { NavLink } from 'react-router-dom';
 import EdgeSvg from '../CommonStyles/EdgeSvg';
 import Form from '../CommonStyles/Form';
 import { useLocation } from 'react-router-dom';
-import watch from '../Assets/watch.svg';
+import { FaEye } from 'react-icons/fa';
+import { FaEyeSlash } from 'react-icons/fa';
 import pencil from '../Assets/pencil-icon.svg';
 
 const PasswordLogin = () => {
         let location = useLocation();
         const { usrEmail } = location.state;
     const link = "#";
-    const [passwordShown, setPasswordShown] = useState(false);
-      const togglePasswordVisiblity = () => {
-        setPasswordShown(passwordShown ? false : true);
-      };
+  const [passwordShown, setPasswordShown] = useState(false);
+  const togglePasswordVisiblity = () => setPasswordShown(!passwordShown);
+      // const togglePasswordVisiblity = () => {
+      //   setPasswordShown(passwordShown ? false : true);
+      // };
     return (
       <EdgeSvg>
         <Form>
@@ -39,15 +41,22 @@ const PasswordLogin = () => {
               id="loginPass"
               placeholder="Enter Password"
             />
-            <img
+            <div className="watchIcon" onClick={togglePasswordVisiblity}>
+              {passwordShown ? (
+                <FaEye className="watch-icon" />
+              ) : (
+                <FaEyeSlash className="watch-icon" />
+              )}
+            </div>
+            {/* <img
               onClick={togglePasswordVisiblity}
               src={watch}
               alt=""
               className="watchIcon"
-            />
+            /> */}
           </div>
           <div className="loadingDiv">
-            <NavLink to='/forget-password'>
+            <NavLink to="/forget-password">
               <button>Login</button>
             </NavLink>
           </div>
