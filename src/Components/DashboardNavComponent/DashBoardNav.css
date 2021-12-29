@@ -1,0 +1,73 @@
+.dashmenu-icon, .avater {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+.dash-header{
+    display: flex;
+    padding: 1.5rem 0;
+   box-shadow: 0 6px 2px -2px var(--primary-grey);
+}
+.dashlogo img{
+    min-height: 6vh;
+     height: 70%; 
+}
+.dashlogo{
+    border-right: 2px solid var(--primary-grey);
+    padding:  0 1rem;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.dash-name p {
+    font-size: 16px;
+     margin: 0 20px;
+}
+.dash-name{
+    margin-right: 600px;
+}
+.dashLink{
+    position: absolute;
+    height: 70vh;
+    top: 80vh;
+    top: -100%;
+    transition: all 0.5s ease-in;
+  /* padding: 20px 80px; */
+  margin-left: 500px;
+
+}
+.dashLink.active{
+  background: white;
+    top: 17%;
+    opacity: 1;
+    transition: all 0.5s ease-out;
+    z-index: 2;
+    -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+    filter: drop-shadow(2px 12px 25px rgba(0,0,0,0.5));
+}
+.dashLink p {
+    color: var(--primary-grey);
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+.dashLink h4{
+    padding: 0 2rem;
+}
+.resource p{
+    font-size: 1.1rem;
+}
+.talent-man p,
+.employeee p {
+    font-size: 1rem;
+    padding: 10px;
+    color: var(--primary-blue);
+}
+.talent-man ,
+.employeee {
+    display: flex;
+    margin: 0 1.5rem ;
+}
+.logout{
+    border-top: 1px solid var(--primary-grey);
+}

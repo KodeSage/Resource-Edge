@@ -56,7 +56,7 @@ const PasswordLogin = () => {
             /> */}
           </div>
           <div className="loadingDiv">
-            <NavLink to="/forget-password">
+            <NavLink to="/dashboard">
               <button>Login</button>
             </NavLink>
           </div>
