@@ -42,7 +42,7 @@ nav{
     top: 17%;
     opacity: 1;
     transition: all 0.5s ease-out;
-    z-index: 2;
+    /* z-index: 2; */
     -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
     filter: drop-shadow(2px 12px 25px rgba(0,0,0,0.5));
 }
